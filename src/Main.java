@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        /// Taking Input
+        // Taking Input
         Student [] arr = new Student[3];
 
         String rollNo;
@@ -32,13 +32,13 @@ public class Main {
             arr[i] = new Student(rollNo,name,marks);
         }
 
-        /// Display Info
+        // Display Info
         for(Student s: arr)
         {
             s.displayInfo();
         }
 
-        /// Print Topper
+        // Print Topper
         Student.findTopper(arr);
 
     }
