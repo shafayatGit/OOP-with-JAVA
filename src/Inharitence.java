@@ -11,7 +11,7 @@ class Car {
     }
 }
 
-class Toyota extends Car { //Toyota class gets all variables and functions of Car
+class Toyota extends Car { //Toyota class gets all variables and functions of Car.
 
     String model;
 
