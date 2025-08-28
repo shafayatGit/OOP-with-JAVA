@@ -3,7 +3,7 @@ class Vehicle{
     protected String brand;
     protected int serial;
 
-     Vehicle(String brand) {
+      public Vehicle(String brand) {
         this.brand = brand;
     }
      Vehicle(int serial) {
@@ -13,12 +13,25 @@ class Vehicle{
       this(brand);
     }
 
+    String getBrand() {
+         return brand;
+    }
+    void setBrand(String brand) {
+         this.brand = brand;
+    }
+    void setSerial(int serial) {
+         this.serial = serial;
+    }
+    int getSerial() {
+         return serial;
+    }
+
 }
 
 class Car extends Vehicle{
     private String ModelName;
     Car(String brand, int serial, String modelName) {
-        super(,serial);
+        super(serial);
     }
 }
 
