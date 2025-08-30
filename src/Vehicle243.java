@@ -3,7 +3,14 @@ class Vehicle{
     protected String brand;
     protected int serial;
 
-      public Vehicle(String brand) {
+
+    String getBrand() {
+        return brand;
+    }
+    void setBrand(String brand) {
+        this.brand = brand;
+    }
+    Vehicle(String brand) {
         this.brand = brand;
     }
      Vehicle(int serial) {
@@ -13,12 +20,7 @@ class Vehicle{
       this(brand);
     }
 
-    String getBrand() {
-         return brand;
-    }
-    void setBrand(String brand) {
-         this.brand = brand;
-    }
+
     void setSerial(int serial) {
          this.serial = serial;
     }
@@ -38,9 +40,7 @@ class Car extends Vehicle{
 
     public class Vehicle243 {
         public static void main(String[] args) {
-            Car car1= new Car("Honda", 20245 , "Integra");
-            car1.honk();
-            System.out.println(car1.brand + " " +car1.modelName);
+
         }
     }
 
