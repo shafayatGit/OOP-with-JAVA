@@ -22,7 +22,7 @@ class Vehicle {
     }
 
     public double quote(int days) {
-        if (days < 0) {
+        if (days <= 0) {
             return 0;
         }
         return days * baseRate;
@@ -39,10 +39,15 @@ class Car extends Vehicle {
     }
 
     public double quote(int days) {
+        if (days <= 0) return 0;
         if (days >= 7) {
             return (0.9 * days * getBaseRate());
         }
         return days * getBaseRate();
+    }
+
+    public String type() {
+        return "Car";
     }
 }
 
@@ -52,6 +57,7 @@ class Bike extends Vehicle {
     }
 
     public double quote(int days) {
+        if (days <= 0) return 0;
         return 0.85 * days * getBaseRate();
     }
 
@@ -66,6 +72,9 @@ class Truck extends Vehicle {
     }
 
     public double quote(int days) {
+        if (days <= 0) {
+            return 0;
+        }
         return days * getBaseRate() + 500;
     }
 
@@ -82,7 +91,21 @@ public class VehicleRentalSystem {
         Bike b1 = new Bike("Bike001", 50000);
         Truck t1 = new Truck("Truck001", 100000);
 
-        Vehicle[] vehicles = {c1, b1,t1};
+        Vehicle[] vehicles = {c1, b1, t1};
+        int day = 3;
+        for (Vehicle temp : vehicles) {
+            System.out.println(temp.type());
+            System.out.println(temp.quote(day));
+        }
+        day = 7;
+        for (Vehicle temp : vehicles) {
+            System.out.println(temp.type());
+            System.out.println(temp.quote(day));
+        }
+        day = 0;
+        for (Vehicle temp : vehicles) {
+            System.out.println(temp.quote(day));
+        }
 
     }
 
