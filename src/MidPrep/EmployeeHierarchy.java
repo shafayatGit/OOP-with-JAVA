@@ -11,6 +11,10 @@ class Employee {
         setBaseSalary(baseSalary); // this is doing just because no one can input negative salary. will validate before putting
     }
 
+    public String getName() {
+        return name;
+    }
+
     //    Getter
     public double getBaseSalary() {
         return baseSalary;
@@ -76,6 +80,28 @@ class Developer extends Employee {
 
 public class EmployeeHierarchy {
     public static void main(String[] args) {
+//        Manager object m1
+        Manager m1 = new Manager("Shafayat", 10000, "CSE", 1000);
+
+//    Developer objects d1 d2
+        Developer d1 = new Developer("ShafayatDev1", 20000, "JS", 1000);
+        Developer d2 = new Developer("ShafayatDev2", 25000, "React", 2000);
+
+        System.out.println("Role Management--->");
+        Employee[] emp = {m1,d1,d2};
+        for(Employee employee: emp){
+            System.out.println(employee.role());
+            System.out.println(employee.totalComp());
+        }
+//    Salary --->
+
+        System.out.println(d1.getName()+" salary before updating"+ d1.getBaseSalary());
+        d1.setBaseSalary(30000);
+        System.out.println(d1.getName()+" salary before updating"+ d1.getBaseSalary());
+
+
+//        Last overridden methode
+
 
     }
 }
