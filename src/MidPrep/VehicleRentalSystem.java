@@ -5,7 +5,7 @@ class Vehicle {
     private double baseRate;
 
     public Vehicle(String plate, double baseRate) {
-        Plate = plate;
+        this.Plate = plate;
         setBaseRate(baseRate);
     }
 
