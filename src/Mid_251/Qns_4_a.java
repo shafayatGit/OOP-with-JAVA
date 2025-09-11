@@ -1,23 +1,28 @@
 package Mid_251;
 
- class FlightBooking {
+class FlightBooking {
     private String passengerName;
     private int seatNumber;
     private boolean confirm = false;
+
     public FlightBooking(String passengerName, int seatNumber) {
         this.passengerName = passengerName;
         this.seatNumber = seatNumber;
     }
-    public boolean getConfirm(){
+
+    public boolean getConfirm() {
         return confirm;
     }
-    public void setConfirm(boolean confirm){
+
+    public void setConfirm(boolean confirm) {
         this.confirm = confirm;
     }
-    public int getSeatNumber(){
+
+    public int getSeatNumber() {
         return seatNumber;
     }
-    public void setSeatNumber(int number){
+
+    public void setSeatNumber(int number) {
         this.seatNumber = number;
     }
 }
