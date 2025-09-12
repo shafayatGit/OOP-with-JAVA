@@ -38,7 +38,6 @@ public class Employee243 {
         e1.setEmployee_id(20);
         e1.setSalary(500);
         System.out.println(e1.getEmployee_id());
-        System.out.println(e1.getSalary());
     }
 
 }
