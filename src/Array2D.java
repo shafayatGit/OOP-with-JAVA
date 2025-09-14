@@ -12,7 +12,7 @@ public class Array2D {
 //            }
 //        }
 
-        //jagged
+        //Jagged Array
         int [][] arrJagged = new int [3][];
         arrJagged[0] = new int[2];
         arrJagged[1] = new int[1];
