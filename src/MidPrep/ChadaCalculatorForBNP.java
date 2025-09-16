@@ -51,7 +51,7 @@ class AutoStand extends Chada {
 
 public class ChadaCalculatorForBNP {
     public static void main(String[] args) {
-    BusChada b1 = new BusChada("Sayed Nogor Bus Stand", 100000);
+    BusChada b1 = new BusChada("Sayed Nogore Bus Stand", 100000);
     AutoStand a1 = new AutoStand("Satarkul Auto Stand",50000);
         System.out.println(b1.calculateChada());
         System.out.println(b1.calculateChada(3));
