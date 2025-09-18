@@ -6,7 +6,7 @@ interface FlyingAnimal
     // Not necessary to write final static, automatically assumed final static
 
     public abstract void fly();
-    // Not necessary to write public abstract, automatically assumed public abstract
+    // Not necessary to write public abstract, automatically assumed public abstract.
 }
 
 interface SwimmingAnimal
