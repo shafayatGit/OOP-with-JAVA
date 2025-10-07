@@ -4,8 +4,13 @@ import javax.swing.*;
 
 class frame extends JFrame{
     public frame(){ //class baanale first e constructor create korte hobe
+        super("This is my new GUI");//setting the title using super
         setVisible(true); // using for visibility
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //for closing the frame
+        setLocationRelativeTo(null); // that will set the location to middle
+        setSize(400,400);
+        //setLocation(700,400); // that will take the location only.
+        //setBounds(700,400,400,400);	//set left corner and length width at the same time
     }
 }
 
