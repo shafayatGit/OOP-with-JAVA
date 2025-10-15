@@ -19,7 +19,6 @@ class Calc implements ActionListener {
 
     Calc() {
         frame = new JFrame("FX991-MS");
-        frame.setVisible(true);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setSize(500, 550);
         frame.setLocationRelativeTo(null);
@@ -75,6 +74,7 @@ class Calc implements ActionListener {
         frame.add(numPanel);
         frame.add(funcPanel);
         frame.add(textField);
+        frame.setVisible(true);
 
 
     }
