@@ -1,6 +1,5 @@
 package Java_Collections;
 
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -58,15 +57,19 @@ public class Comparable_And_Comparator {
         arr1.add(new Student(9, 3.65, "Cathy"));
 
         System.out.println("arr1 = " + arr1);
+        System.out.println("1st Line Ends----------------------");
         Collections.sort(arr1); //to sort Students, you need to tell how to compare Students
         System.out.println("arr1 = " + arr1);
-
+        System.out.println("2nd Line Ends----------------------");
         System.out.println("arr1 = " + arr1);
+        System.out.println("3rd Line Ends----------------------");
         Collections.sort(arr1, new NameComparator()); //for other ways of comparison, give comparator object as 2nd parameter
         System.out.println("arr1 = " + arr1);
+        System.out.println("4th Line Ends----------------------");
 
         Collections.sort(arr1, Collections.reverseOrder(new NameComparator())); //to get reverse sorting of your comparator class
         System.out.println("arr1 = " + arr1);
+        System.out.println("5th Line Ends------------------------");
 
 
     }
