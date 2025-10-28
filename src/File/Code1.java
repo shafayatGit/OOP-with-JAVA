@@ -42,7 +42,7 @@ public class Code1 {
             // the file is in the Project folder
             // for file in Source folder, the path should be "src/Student.txt"
             // can use any other streams for reading files
-            // but Scanner has all functionalities and we already know the syntax of Scanner
+            // but Scanner has all functionalities, and we already know the syntax of Scanner
 
             FileOutputStream fos = new FileOutputStream("Student2.txt");
             // for writing to Files
