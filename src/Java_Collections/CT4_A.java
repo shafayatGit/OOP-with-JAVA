@@ -50,6 +50,12 @@ public class CT4_A {
                 p.jersey = 76;
             }
         }
+        //for another purpose
+        for(int i =- 0; i<player1.size();i++){
+            if(player1.get(i).name.equals("Sakib")){
+                System.out.println(player1.get(i));
+            }
+        }
         System.out.println(player1);
         player1.remove(2);
         Collections.sort(player1);
